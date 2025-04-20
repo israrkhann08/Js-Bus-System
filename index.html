@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedo Bus Route Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Find Your Bus Route</h1>
+    <form id="routeForm">
+        <label for="startLocation">Your Location</label>
+        <select id="startLocation" required>
+            <option value="">Select your start location</option>
+            <option value="Railway Station">Railway Station</option>
+            <option value="Samanabad Mor">Samanabad Mor</option>
+            <option value="R.A Bazar">R.A Bazar</option>
+            <option value="Shad Bagh Underpass">Shad Bagh Underpass</option>
+            <option value="Babu Sabu">Babu Sabu</option>
+            <option value="Bagrian">Bagrian</option>
+            <option value="Doctor Hospital">Doctor Hospital</option>
+            <option value="Multan Chungi">Multan Chungi</option>
+            <!-- Add more start locations as needed -->
+        </select>
+
+        <label for="endLocation">Destination Location</label>
+        <select id="endLocation" required>
+            <option value="">Select your destination location</option>
+            <option value="Bhatti Chowk">Bhatti Chowk</option>
+            <option value="Shahdara Lari Adda">Shahdara Lari Adda</option>
+            <option value="Chungi Amar Sidhu">Chungi Amar Sidhu</option>
+            <option value="Raj Garh Chowk">Raj Garh Chowk</option>
+            <option value="Canal">Canal</option>
+            <option value="Qartaba Chowk">Qartaba Chowk</option>
+            <option value="Main Market Gulberg">Main Market Gulberg</option>
+            <!-- Add more destination locations as needed -->
+        </select>
+
+        <button type="submit">Find Bus Route</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
